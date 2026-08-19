@@ -23,7 +23,8 @@ everything else, along with the tests that back each one up:
   `duplicatesAreCollapsedEvenWhenTheyBridgeARun`.
 - Negative numbers are allowed. A range like -3 to -1 prints as `-3--1`,
   which looks a bit odd but is unambiguous given "-" is also the range
-  separator - see `aRangeCanCrossZero`.
+  separator - see `doesNotUnderflowAtIntegerMinValue`, which exercises the
+  same double-dash formatting between two negative numbers.
 - "Consecutive" means the numbers differ by exactly 1, and a run only turns
   into a range once it's 2 or more numbers - a single number just prints on
   its own.
